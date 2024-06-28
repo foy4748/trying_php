@@ -9,8 +9,9 @@
 </head>
 
 <body>
+	<?php include("controllers/index.php"); ?>
 	<header>
-		<h1><a href="/">Trying PHP</a></h1>
+		<h1><a href="/">Trying PHP | About</a></h1>
 	</header>
 	<main>
 		<section>
