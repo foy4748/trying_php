@@ -17,4 +17,9 @@ $routes = [
 		'page_title' => 'Dashboard',
 		'view_file' => 'dashboard.view.php'
 	],
+	'/users' => [
+		'name' => 'Users',
+		'page_title' => 'Users',
+		'view_file' => 'users.view.php'
+	],
 ];
