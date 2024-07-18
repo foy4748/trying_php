@@ -22,4 +22,14 @@ $routes = [
 		'page_title' => 'Users',
 		'view_file' => 'users.view.php'
 	],
+	'/notes' => [
+		'name' => 'Notes',
+		'page_title' => 'Notes',
+		'view_file' => 'notes.view.php'
+	],
+	'/create/note' => [
+		'name' => 'Create_Note',
+		'page_title' => 'Create a Note',
+		'view_file' => 'create_note.view.php'
+	],
 ];

@@ -9,20 +9,17 @@
 </head>
 
 <body>
-	<?php include("controllers/users.php"); ?>
+	<?php include("controllers/index.php"); ?>
 	<header>
-		<h1><a href="/">Trying PHP | Users</a></h1>
+		<h1><a href="/">Trying PHP | About</a></h1>
 	</header>
 	<main>
 		<section>
-			<?php foreach ($users as $user) :  ?>
-				<?php foreach ($user as $key => $value) :  ?>
-					<pre>
-					<?= "{$key} {$value}" ?>
-				</pre>
-				<?php endforeach ?>
-				<br>
-			<?php endforeach ?>
+			<h2>Create a Note</h2>
+			<form method="POST" action="/controllers/create_note.php">
+				<textarea type="text" cols="10" rows="10" name="body"></textarea>
+				<button type="submit">Create</button>
+			</form>
 		</section>
 	</main>
 </body>

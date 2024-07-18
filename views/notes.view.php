@@ -9,14 +9,14 @@
 </head>
 
 <body>
-	<?php include("controllers/users.php"); ?>
+	<?php include("controllers/notes.php"); ?>
 	<header>
-		<h1><a href="/">Trying PHP | Users</a></h1>
+		<h1><a href="/">Trying PHP | Notes</a></h1>
 	</header>
 	<main>
 		<section>
-			<?php foreach ($users as $user) :  ?>
-				<?php foreach ($user as $key => $value) :  ?>
+			<?php foreach ($notes as $note) :  ?>
+				<?php foreach ($note as $key => $value) :  ?>
 					<pre>
 					<?= "{$key} {$value}" ?>
 				</pre>
