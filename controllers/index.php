@@ -51,3 +51,5 @@ $searchPragrammingLanguages = function ($data, $fn) {
 };
 
 $filteredData = $searchPragrammingLanguages($programmingLanguages, $searchFilter);
+
+require("views/index.view.php");

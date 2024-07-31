@@ -9,13 +9,12 @@
 </head>
 
 <body>
-	<?php include("controllers/users.php"); ?>
 	<header>
 		<h1><a href="/">Trying PHP | Users</a></h1>
 	</header>
 	<main>
 		<section>
-			<?php foreach ($users as $user) :  ?>
+			<?php if (isset($users)) foreach ($users as $user) :  ?>
 				<?php foreach ($user as $key => $value) :  ?>
 					<pre>
 					<?= "{$key} {$value}" ?>

@@ -9,7 +9,6 @@
 </head>
 
 <body>
-	<?php include("controllers/index.php"); ?>
 	<header>
 		<h1><a href="/">Trying PHP | Dashboard</a></h1>
 	</header>

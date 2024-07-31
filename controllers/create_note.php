@@ -1,15 +1,18 @@
 <?php
-require("../utilities.php");
 require("../DatabaseConnection.php");
 $config = require("../config.php");
 
 $connection = new DatabaseConnection($config);
 
-$note = $_POST["body"];
-// $query = 'INSERT INTO public.ToDos (body, user_id) VALUES (?, 1)';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	$note = $_POST["body"];
+	// $query = 'INSERT INTO public.ToDos (body, user_id) VALUES (?, 1)';
 
-$query = 'INSERT INTO "public"."ToDos" ("body", "user_id") VALUES (:body, 1);';
+	$query = 'INSERT INTO "public"."ToDos" ("body", "user_id") VALUES (:body, 1);';
 
-$notes = $connection->query($query, ["body" => $note])->fetchAll();
+	$notes = $connection->query($query, ["body" => $note])->fetchAll();
+}
 
-dd($notes);
+
+# dd($notes);
+require("../views/create_note.view.php");

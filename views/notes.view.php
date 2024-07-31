@@ -9,13 +9,12 @@
 </head>
 
 <body>
-	<?php include("controllers/notes.php"); ?>
 	<header>
 		<h1><a href="/">Trying PHP | Notes</a></h1>
 	</header>
 	<main>
 		<section>
-			<?php foreach ($notes as $note) :  ?>
+			<?php if (isset($notes)) foreach ($notes as $note) :  ?>
 				<?php foreach ($note as $key => $value) :  ?>
 					<pre>
 					<?= "{$key} {$value}" ?>

@@ -5,31 +5,31 @@ $routes = [
 	'/' => [
 		'name' => 'Home',
 		'page_title' => 'Home',
-		'view_file' => 'index.view.php'
+		'controller_file' => 'index.php'
 	],
 	'/about' => [
 		'name' => 'About',
 		'page_title' => 'About Us',
-		'view_file' => 'about.view.php'
+		'controller_file' => 'about.php'
 	],
 	'/dashboard' => [
 		'name' => 'Dashboard',
 		'page_title' => 'Dashboard',
-		'view_file' => 'dashboard.view.php'
+		'controller_file' => 'dashboard.php'
 	],
 	'/users' => [
 		'name' => 'Users',
 		'page_title' => 'Users',
-		'view_file' => 'users.view.php'
+		'controller_file' => 'users.php'
 	],
 	'/notes' => [
 		'name' => 'Notes',
 		'page_title' => 'Notes',
-		'view_file' => 'notes.view.php'
+		'controller_file' => 'notes.php'
 	],
 	'/create/note' => [
 		'name' => 'Create_Note',
 		'page_title' => 'Create a Note',
-		'view_file' => 'create_note.view.php'
+		'controller_file' => 'create_note.php'
 	],
 ];

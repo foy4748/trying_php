@@ -9,14 +9,13 @@
 </head>
 
 <body>
-	<?php include("controllers/index.php"); ?>
 	<header>
 		<h1><a href="/">Trying PHP | About</a></h1>
 	</header>
 	<main>
 		<section>
 			<h2>Create a Note</h2>
-			<form method="POST" action="/controllers/create_note.php">
+			<form method="POST">
 				<textarea type="text" cols="10" rows="10" name="body"></textarea>
 				<button type="submit">Create</button>
 			</form>
