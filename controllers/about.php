@@ -1,3 +1,3 @@
 <?php
 
-require("views/about.view.php");
+require(PROJECT_ROOT . "/views/about.view.php");

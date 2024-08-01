@@ -52,4 +52,6 @@ $searchPragrammingLanguages = function ($data, $fn) {
 
 $filteredData = $searchPragrammingLanguages($programmingLanguages, $searchFilter);
 
-require("views/index.view.php");
+$page_title = "Home";
+
+require(PROJECT_ROOT . "/views/index.view.php");

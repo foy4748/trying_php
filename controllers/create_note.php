@@ -1,8 +1,10 @@
 <?php
-require("../DatabaseConnection.php");
-$config = require("../config.php");
+require(PROJECT_ROOT . "/DatabaseConnection.php");
+$config = require(PROJECT_ROOT . "/config.php");
 
 $connection = new DatabaseConnection($config);
+
+$notes = [];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$note = $_POST["body"];
@@ -15,4 +17,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 # dd($notes);
-require("../views/create_note.view.php");
+require(PROJECT_ROOT . "/views/create_note.view.php");

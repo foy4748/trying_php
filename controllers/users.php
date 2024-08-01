@@ -1,9 +1,9 @@
 <?php
-$config = require_once("config.php");
-require_once "DatabaseConnection.php";
+$config = require(PROJECT_ROOT . "/config.php");
+require(PROJECT_ROOT . "/DatabaseConnection.php");
 
 $connection = new DatabaseConnection($config);
 
 $users = $connection->query('SELECT * from PUBLIC."User"')->fetchAll();
 
-require("views/users.view.php");
+require(PROJECT_ROOT . "/views/users.view.php");

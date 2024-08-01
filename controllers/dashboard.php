@@ -1,3 +1,3 @@
 <?php
 
-require("views/dashboard.view.php");
+require(PROJECT_ROOT . "/views/dashboard.view.php");
