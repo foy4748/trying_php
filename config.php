@@ -2,7 +2,7 @@
 
 $config = [
 	'database' => [
-		'host' => 'localhost',
+		'host' => '172.17.0.3',
 		'dbname' => 'explore_php',
 		'port' => '5432'
 	],
