@@ -1,0 +1,32 @@
+services:
+  # PHP Apache webserver service
+  webserverphp:
+    container_name: learn-php-docker-compose
+    build:
+    # Dockerfile path
+      context: .
+      dockerfile: Dockerfile  
+    volumes:
+      - ./:/var/www/html 
+    ports:
+      - 3000:80
+    depends_on:
+      - postgresphp
+
+  postgresphp:
+    container_name: learn-php-postgres-docker-compose
+    image: postgres:12.17-alpine3.19
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_DB: explore_php
+      POSTGRES_USER: foy4748_php
+      POSTGRES_PASSWORD: foy4748_php_db
+    ports:
+      - 5432:5432
+    volumes:
+      - for-pg:/var/lib/postgresql/data
+
+volumes:
+  for-pg:
+    external: true
+    name: for-pg
