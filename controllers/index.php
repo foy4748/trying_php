@@ -54,4 +54,4 @@ $filteredData = $searchPragrammingLanguages($programmingLanguages, $searchFilter
 
 $page_title = "Home";
 
-require(PROJECT_ROOT . "/views/index.view.php");
+view("/index.view.php", ["filteredData" => $filteredData]);

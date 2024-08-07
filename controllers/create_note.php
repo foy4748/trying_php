@@ -1,6 +1,6 @@
 <?php
-require(PROJECT_ROOT . "/DatabaseConnection.php");
-$config = require(PROJECT_ROOT . "/config.php");
+require base_path("/DatabaseConnection.php");
+$config = require base_path("/config.php");
 
 $connection = new DatabaseConnection($config);
 
@@ -17,4 +17,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 # dd($notes);
-require(PROJECT_ROOT . "/views/create_note.view.php");
+view("/create_note.view.php");
