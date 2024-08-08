@@ -1,6 +1,13 @@
 <?php
 
-$config = require('config.php');
+namespace Lib;
+
+$config = require base_path('/config.php');
+
+
+use PDO;
+use PDOException;
+
 
 class DatabaseConnection
 {

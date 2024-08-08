@@ -4,6 +4,11 @@ require base_path("/router/routes.php");
 
 $current_path = parse_url($_SERVER["REQUEST_URI"])['path'];
 
+spl_autoload_register(function ($path) {
+	//dd($path);
+	require base_path(DIRECTORY_SEPARATOR . "{$path}.php");
+});
+
 
 if (array_key_exists($current_path, $routes)) {
 	$page_title = $routes[$current_path]['page_title'];
