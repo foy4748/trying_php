@@ -1,6 +1,13 @@
 <?php
 
+$router->get("/", "index.php");
+$router->get("/about", "about.php");
+$router->get("/dashboard", "dashboard.php");
+$router->get("/users", "users.php");
+$router->get("/notes", "notes.php");
+$router->get("/create/note", "create_note.php");
 
+/*
 $routes = [
 	'/' => [
 		'name' => 'Home',
@@ -33,3 +40,4 @@ $routes = [
 		'controller_file' => 'create_note.php'
 	],
 ];
+*/

@@ -1,5 +1,7 @@
 <?php
-require base_path("/DatabaseConnection.php");
+//require base_path("/DatabaseConnection.php");
+use Lib\DatabaseConnection;
+
 $config = require base_path("/config.php");
 
 $connection = new DatabaseConnection($config);
