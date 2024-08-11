@@ -8,7 +8,7 @@ require base_path("/router/routes.php");
 
 
 $current_path = parse_url($_SERVER["REQUEST_URI"])['path'];
-$method = $_SERVER['REQUEST_METHOD'];
+$method = $_POST["__method"] ?? $_SERVER['REQUEST_METHOD'];
 
 $router->route($current_path, $method);
 

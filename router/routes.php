@@ -4,8 +4,12 @@ $router->get("/", "index.php");
 $router->get("/about", "about.php");
 $router->get("/dashboard", "dashboard.php");
 $router->get("/users", "users.php");
-$router->get("/notes", "notes.php");
-$router->get("/create/note", "create_note.php");
+
+// Notes
+$router->post("/create/note", "notes/create_note.php");
+$router->get("/notes", "notes/index.php");
+$router->get("/create/note", "notes/form.php");
+$router->delete("/notes", "notes/delete.php");
 
 /*
 $routes = [
