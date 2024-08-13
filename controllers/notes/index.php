@@ -1,10 +1,9 @@
 <?php
-$config = require base_path("/config.php");
-//require base_path("/DatabaseConnection.php");
 
 use Lib\DatabaseConnection;
+use Lib\App;
 
-$connection = new DatabaseConnection($config);
+$connection = App::resolve(DatabaseConnection::class);
 
 $currentUserId = 1;
 

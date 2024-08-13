@@ -10,9 +10,7 @@ class Containers
 
 	public function bind($key, $resolver)
 	{
-		$this->bindings[] = [
-			$key => $resolver
-		];
+		$this->bindings[$key] = $resolver;
 	}
 
 	public function resolve($key)

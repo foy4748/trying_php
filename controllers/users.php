@@ -1,10 +1,9 @@
 <?php
-$config = require base_path("/config.php");
-//require base_path("/DatabaseConnection.php");
 
+use Lib\App;
 use Lib\DatabaseConnection;
 
-$connection = new DatabaseConnection($config);
+$connection = App::resolve(DatabaseConnection::class);
 
 $users = $connection->query('SELECT * from PUBLIC."User"')->fetchAll();
 
