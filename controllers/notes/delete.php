@@ -1,10 +1,9 @@
 <?php
 
+use Lib\App;
 use Lib\DatabaseConnection;
 
-$config = require base_path("/config.php");
-
-$connection = new DatabaseConnection($config);
+$connection = App::resolve(DatabaseConnection::class);
 
 $id = $_POST["id"];
 // $query = 'INSERT INTO public.ToDos (body, user_id) VALUES (?, 1)';

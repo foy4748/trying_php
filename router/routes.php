@@ -9,6 +9,8 @@ $router->get("/users", "users.php");
 $router->post("/create/note", "notes/create_note.php");
 $router->get("/notes", "notes/index.php");
 $router->get("/create/note", "notes/form.php");
+$router->get("/update/note", "notes/update_form.php");
+$router->patch("/update/note", "notes/update_note.php");
 $router->delete("/notes", "notes/delete.php");
 
 /*

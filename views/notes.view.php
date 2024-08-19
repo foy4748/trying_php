@@ -5,6 +5,7 @@
 			<input hidden name="__method" value="DELETE" />
 			<button>(X)</button>
 		</form>
+		<a href="/update/note?id=<?= $note["id"] ?>">(✏)</a>
 		<?php foreach ($note as $key => $value) :  ?>
 			<pre>
 			<?= "{$key} {$value}" ?>
